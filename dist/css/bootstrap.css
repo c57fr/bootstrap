@@ -9300,4 +9300,8 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important;
 }
+
+body {
+  color: #26ff00;
+}
 /*# sourceMappingURL=bootstrap.css.map */
