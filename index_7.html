@@ -18,22 +18,33 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="#">Un titre</a>
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Lien actif</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Lien normal</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Un autre lien</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Lien désactivé</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="/" title="Aller à l'acceuil">
+      <img src="img/logo_c7.jpg" alt="Logo" height="22" class="img-rounded mylogo">
+      Un titre</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-nowrap" href="#">Lien actif<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="#">Lien normal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-nowrap" href="#">Un autre lien</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-nowrap" href="#">Lien désactivé</a>
+            </li>
+          </ul>
+          <span class="navbar-text text-nowrap">
+            Text
+          </span>
+        </div>
   </nav>
 
   <div class="pl-3 pr-3 containrer text-justify">
