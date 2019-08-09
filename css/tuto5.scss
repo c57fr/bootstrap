@@ -36,15 +36,24 @@ aside {
   width: 95%;
 }
 
-footer{
+footer {
   width: 100%;
   margin: 0 auto;
 }
 
-.vam{
+.vam {
   vertical-align: middle !important;
 }
 
-.blocalign{
-  
+#alignblocs.container {
+    height: 500px;
+    border: 1px solid blue;
+    background-color: rgb(226, 221, 221);
+    border-radius: 7px;}
+    
+#alignblocs .bloc1 {
+    height: 200px;
+    border: 1px solid rgb(1, 1, 80);
+    background-color: rgb(226, 221, 221);
+    border-radius: 7px;
 }
