@@ -23,9 +23,8 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="fontawesome5.10/css/all.min.css" />
-    
+
     <script src="https://use.fontawesome.com/0b5fa10a1b.js"></script>
-    
   </head>
 
   <body>
@@ -59,14 +58,65 @@
             type="number"
             class="form-control"
             id="age"
-            value="20"
-            min="20"
+            value="18"
+            min="18"
             max="80"
             required
           />
         </div>
         <button class="btn btn-primary" type="submit">Envoyer</button>
       </form>
+      
+      <hr>
+      
+      <div class="container">
+        
+        <h2>Validation personnalisée (js)</h2>
+          <br>
+          <form id="form2" novalidate>
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+              <div class="invalid-feedback">
+                Veuillez entrer un nom
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="prenom">Prénom</label>
+              <input type="text" class="form-control" id="prenom" placeholder="Prénom" value="Pol" required>
+              <div class="invalid-feedback">
+                Veuillez entrer un prénom
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="prenom">Age</label>
+              <input type="number" class="form-control" id="age" value="20" min="20" max="80" required>
+              <div class="invalid-feedback">
+                Veuillez entrer un nombre entier compris entre 20 et 80
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+            <div class="row m-0">
+              Côté serveur: is-valid & is-invalid à ajouter à la class de l'input
+            </div>
+          </form>
+        </div>
+        <script>
+        (function() {
+          "use strict"
+          window.addEventListener("load", function() {
+            var form = document.getElementById("form2")
+            form.addEventListener("submit", function(event) {
+              if (form.checkValidity() == false) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add("was-validated")
+            }, false)
+          }, false)
+        }())
+        </script>
+      
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -85,6 +135,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-  
   </body>
 </html>
