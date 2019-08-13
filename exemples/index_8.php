@@ -33,6 +33,13 @@
         <input type="button" class="btn btn-primary mt-2 ml-3" id="animer" value="Animer">
     </div>
 
+    <div class="container alert alert-warning mt-2">
+        <h3 class="alert-heading">Information importante!</h4>
+            <p>L'utilisation de la classe <strong>alert</strong> n'est pas sans danger pour les yeux fatigués des
+                pauvres internautes, et je vous demande instamment de l'utiliser avec parcimonie...</p>
+            Un <a href="#" class="alert-link">joli lien</a> dans une alerte...
+    </div>
+
     <div class="container">
         <header class="row">
             <div class="col-md-12 col-lg-8">
