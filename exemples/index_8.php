@@ -78,13 +78,20 @@
                 <nav>
                     <ul class="pagination justify-content-center">
                         <li class="page-item"><a class="page-link" href="#" id="previous">&laquo;</a>
-                        <li class="page-item active"><a class="page-link" href="#" id="0">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#" id="1">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#" id="2">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#" id="3">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#" id="next">&raquo;</a>
+                            <?php
+                for ($i=0; $i < 4; $i++) { 
+                                            $actif =  (0 === $i)?'active':'';
+                    ?>
+                        <li class="page-item <?= $actif?>"><a class="page-link" href="#" id="<?=$i?>"><?=$i+1?></a></li>
+
+                        <?php
+                }
+                ?>
+
+                        <li class=" page-item"><a class="page-link" href="#" id="next">&raquo;</a>
                     </ul>
                     </ul>
+
                 </nav>
             </div>
 
@@ -131,43 +138,18 @@
                 </div>
             </div>
             <div class="row">
+                <?php
+                for ($i=1; $i < 13; $i++) { 
+                    ?>
+
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t1.jpg" alt="Tigre" />
+                    <img class="img-fluid rounded" src="../img/t<?=$i?>.jpg" alt="Tigre" />
                 </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t2.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t3.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t4.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t5.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t6.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t7.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t8.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t9.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t10.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t11.jpg" alt="Tigre" />
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t12.jpg" alt="Tigre" />
-                </div>
+                <?php
+                }
+                ?>
             </div>
+
             <div class="row">
                 <div class="col-md-4">
                     <p><strong>Sous-espèces des tigres :</strong></p>
@@ -298,23 +280,15 @@
     </div>
 
     <nav class="mb-4">
-
-        <?php
-
-      for ($i = 1; $i < 4; ++$i) {
-          echo $i;
-      }
-
-      ?>
-
         <ul class="pagination pagination-sm justify-content-center">
             <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <?php
+                for ($i = 1; $i < 6; ++$i) {
+                    ?>
+            <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
+            <?php
+                }
+            ?>
             <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
         </ul>
     </nav>
