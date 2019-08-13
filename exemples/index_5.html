@@ -1,173 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="icon" href="../../../../favicon.ico" />
+  <link rel="icon" href="favicon.ico" />
   <title>Starter Template for Bootstrap</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link href="css/tuto6.scss" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="fontawesome5.10/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css">
+  <link href="css/tuto7.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="ml-3 mr-3">
-    <span class="fa fa-camera fa-3x"></span> : Il faut déverrouiller <span class="fa fa-unlock fa-2x"></span> pour
-    sortir <span class="fa fa-arrow-right fa-5x"></span>
-  </div>
 
-  <ul class="fa-ul">
-    <li><span class="fa-li"><i class="fa fa-check-square"></i></span>List icons can</li>
-    <li><span class="fa-li"><i class="fa fa-check-square"></i></span>be used to</li>
-    <li><span class="fa-li"><i class="fa fa-spinner fa-pulse"></i></span>replace bullets</li>
-    <li><span class="fa-li"><i class="fa fa-square"></i></span>in lists</li>
-  </ul>
+  <section class="head-text">
+    <div class="container text-center pt-3 pb-3">
+      <h2>Bootstrap4 Responsive Sticky Navbar</h2>
+    </div>
+  </section>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top fixed-top" id='navbar'>
+    <div class="container">
+      <a class="navbar-brand" href="/" title="Aller à l'acceuil">
+        <img src="../img/logo_c7.jpg" alt="Logo" height="22" class="img-rounded mylogo">
+        Un titre</a>
 
-  <div class="fa-3x">
-    <i class="fa fa-spinner fa-spin"></i>
-    <i class="fa fa-circle-notch fa-spin"></i>
-    <i class="fa fa-sync fa-spin"></i>
-    <i class="fa fa-cog fa-spin"></i>
-    <i class="fa fa-spinner fa-pulse"></i>
-    <i class="fa fa-stroopwafel fa-spin"></i>
-  </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="btnmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto w-100">
+          <li class="nav-item active">
+            <a class="nav-link text-nowrap" href="#">Lien actif<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">Lien normal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">Un autre lien</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-nowrap" href="#">Lien désactivé</a>
+          </li>
+        </ul>
+        <span class="navbar-text text-nowrap">
+          Text
+        </span>
+      </div>
+    </div>
+  </nav>
 
-  <div class="row w-100 p-3 text-center">
-      <div class="col-6 p-3">
-          <div class="btn-group">
-            <a class="btn btn-danger" href="#"><span class="fa fa-fast-backward"></span></a>
-            <a class="btn btn-info" href="#"><span class="fa fa-backward"></span></a>
-            <a class="btn btn-warning" href="#"><span class="fa fa-play"></span></a>
-            <a class="btn btn-info" href="#"><span class="fa fa-forward"></span></a>
-            <a class="btn btn-danger" href="#"><span class="fa fa-fast-forward"></span></a>
-          </div>
-          
-          <img src="img/li_230108.jpg" alt="Photo Li" class="img-thumbnail w-75 mt-3">
+<img src="img/bg.jpg" alt="" class="img-fluid mt-3" width="100%">
+  
+  <main role="main" class="pl-3 pr-3 text-justify" id="contentgc7">
+    <div class="container">
+      <div class="p-1">DDDDD Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero porro delectus voluptates
+        nisi
+        sunt
+        rerum cum optio vitae sit, perferendis magnam praesentium fugit laudantium. Vel deleniti tempore eaque eius
+        nesciunt.</div>
+
+      <div class="row pt-2">
+        <div class="col-5">
+          <div class="p-1">Libero rem sint voluptas quis natus? Minima iste voluptatum ab eveniet neque magnam voluptate
+            pariatur est earum, saepe ratione recusandae eaque, corporis, minus praesentium officiis voluptatibus aut
+            sint. Maxime, dignissimos?</div>
         </div>
-          
-    <div class="col-6 p-3 text-right">
-      <div class="btn-group-vertical">
-        <a class="btn btn-danger" href="#"><span class="fa fa-pen"></span></a>
-        <a class="btn btn-info" href="#"><span class="fa fa-search"></span></a>
-        <a class="btn btn-warning" href="#"><span class="fa fa-print"></span></a>
-        <a class="btn btn-success" href="#"><span class="fa fa-image"></span></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="p-2 text-center">
-    <button class="btn btn-primary btn-sm"><span class="fa fa-user"></span><br>Utilisateurs</button>
-    <button class="btn btn-dark btn-sm"><span class="fa fa-comment"></span><br>Commentaires</button>
-    <button class="btn btn-success btn-sm"><span class="fa fa-calendar"></span><br>Evénements</button>
-    <button class="btn btn-danger btn-sm"><span class="fa fa-shopping-cart"></span><br>Boutique</button>
-    <button class="btn btn-info btn-sm"><span class="fa fa-bullhorn"></span><br>Messages</button>
-  </div>
-
-  <div class="p-3 text-center">
-    <button class="btn btn-primary btn-lg rounded-circle"><span class="fa fa-user"></span></button>
-    <button class="btn btn-dark btn-lg  rounded-circle"><span class="fa fa-comment"></span></button>
-    <button class="btn btn-success btn-lg  rounded-circle"><span class="fa fa-calendar"></span></button>
-    <button class="btn btn-danger btn-lg  rounded-circle"><span class="fa fa-shopping-cart"></button>
-    <button class="btn btn-info btn-lg  rounded-circle"><span class="fa fa-bullhorn"></span></button>
-  </div>
-
-  <form class="p-3">
-    <div class="form-group">
-      <label for="texte">Text : </label>
-      <input id="texte" type="text" class="form-control" />
-    </div>
-    <div class="form-group">
-      <label for="textarea">Textarea : </label>
-      <textarea id="textarea" class="form-control">
-Un peu de texte ici</textarea>
-    </div>
-
-    <div class="row justify-content-around mr-1">
-
-      <select class="custom-select col-5">
-        <option selected>Select Option</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-
-      <div class="col-5">
-        <button class="btn btn-primary pl-5 pr-5">Envoyer</button>
-      </div>
-    </div>
-
-    <div class="col-6">
-    </div>
-    </div>
-
-    <p></p>
-
-    <div class="form-row">
-      <div class="form-group col-3">
-        <label for="select">Select </label>
-        <select id="select" class="custom-select">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-      </div>
-      <div class="col-6 p-3">
-        <form class="form-inline">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control text-right" value="100,50">
-            <div class="input-group-append">
-              <span class="input-group-text">€</span>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <form class="form-inline col-8">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">€</span>
-          </div>
-          <input type="text" class="form-control text-right" value="100">
-          <div class="input-group-append">
-            <span class="input-group-text">.00</span>
-          </div>
+        <div class="col">
+          <div class="p-1">Fugit quibusdam commodi dolorem minima cupiditate consequuntur dolor nulla rem incidunt
+            eaque.
+            Exercitationem saepe accusantium deserunt voluptatum? Exercitationem quibusdam quos fugit repudiandae. Eum
+            suscipit laudantium voluptas autem aspernatur ducimus exercitationem?</div>
         </div>
-          <small class="form-text text-muted">Un petit texte explicatif pour le contrôle</small>
+      </div>
 
-      </form>
+      <div class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero porro delectus voluptates nisi sunt
+        rerum cum optio vitae sit, perferendis magnam praesentium fugit laudantium. Vel deleniti tempore eaque eius
+        nesciunt.</div>
 
-      <form class="was-validated">
-        <div class="custom-control custom-checkbox mb-3">
-          <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-          <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-          <div class="invalid-feedback">Example invalid feedback text</div>
+      <div class="row pt-2">
+        <div class="col-5">
+          <div class="p-1">LLLL Libero rem sint voluptas quis natus? Minima iste voluptatum ab eveniet neque magnam
+            voluptate
+            pariatur est earum, saepe ratione recusandae eaque, corporis, minus praesentium officiis voluptatibus aut
+            sint. Maxime, dignissimos?</div>
         </div>
-      </form>
+        <div class="col">
+          <div class="p-1">Fugit quibusdam commodi dolorem minima cupiditate consequuntur dolor nulla rem incidunt
+            eaque.
+            Exercitationem saepe accusantium deserunt voluptatum? Exercitationem quibusdam quos fugit repudiandae. Eum
+            suscipit laudantium voluptas autem aspernatur ducimus exercitationem?</div>
+        </div>
+      </div>
 
-      <div class="col-4 mt-3">
-        <button class="btn btn-primary pl-5 pr-4">Envoyer</button>
+
+
+      <div class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero porro delectus voluptates nisi sunt
+        rerum cum optio vitae sit, perferendis magnam praesentium fugit laudantium. Vel deleniti tempore eaque eius
+        nesciunt.</div>
+
+      <div class="row pt-2">
+        <div class="col-5">
+          <div class="p-1">Libero rem sint voluptas quis natus? Minima iste voluptatum ab eveniet neque magnam voluptate
+            pariatur est earum, saepe ratione recusandae eaque, corporis, minus praesentium officiis voluptatibus aut
+            sint. Maxime, dignissimos?</div>
+        </div>
+        <div class="col">
+          <div class="p-1">Fugit quibusdam commodi dolorem minima cupiditate consequuntur dolor nulla rem incidunt
+            eaque.
+            Exercitationem saepe accusantium deserunt voluptatum? Exercitationem quibusdam quos fugit repudiandae. Eum
+            suscipit laudantium voluptas autem aspernatur ducimus exercitationem?</div>
+        </div>
+      </div>
+
+      <div class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero porro delectus voluptates nisi sunt
+        rerum cum optio vitae sit, perferendis magnam praesentium fugit laudantium. Vel deleniti tempore eaque eius
+        nesciunt.</div>
+
+      <div class="row pt-2">
+        <div class="col-5">
+          <div class="p-1">Libero rem sint voluptas quis natus? Minima iste voluptatum ab eveniet neque magnam voluptate
+            pariatur est earum, saepe ratione recusandae eaque, corporis, minus praesentium officiis voluptatibus aut
+            sint. Maxime, dignissimos?</div>
+        </div>
+        <div class="col">
+          <div class="p-1">Fugit quibusdam commodi dolorem minima cupiditate consequuntur dolor nulla rem incidunt
+            eaque.
+            Exercitationem saepe accusantium deserunt voluptatum? Exercitationem quibusdam quos fugit repudiandae. Eum
+            suscipit laudantium voluptas autem aspernatur ducimus exercitationem?</div>
+        </div>
       </div>
 
     </div>
+  </main>
 
-  </form>
 
-  <div class="row justify-content-around ml-1 mr-1">
-    <div class="col-2 align-self-center">
-      qqsdsq
-    </div>
-    <div class="col-3 align-self-center">
-      qqsdsq
-    </div>
-  </div>
-
-  <div><br /></div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -179,6 +152,24 @@ Un peu de texte ici</textarea>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/js/all.min.js"></script>
+  <!--
+    <script src="js/navBarTop.js"></script>
+  -->
+  
+  <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "10px 10px";
+        } else {
+          document.getElementById("navbar").style.padding = "20px 10px";
+        }
+      }
+      </script>
+
 </body>
 
 </html>
