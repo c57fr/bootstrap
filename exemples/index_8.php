@@ -185,29 +185,66 @@
                 ?>
             </div>
 
+
             <div class="row">
-                <div class="col-md-4">
-                    <p><strong>Sous-espèces des tigres :</strong></p>
-                    <ul>
-                        <li>Tigre de Sibérie</li>
-                        <li>Tigre de Chine méridionale</li>
-                        <li>Tigre de Bali</li>
-                        <li>Tigre de d'Indochine</li>
-                        <li>Tigre de Malaisie</li>
-                        <li>Tigre de Java</li>
-                        <li>Tigre de Sumatra</li>
-                        <li>Tigre du Bengale</li>
-                        <li>Tigre de la Caspienne</li>
-                    </ul>
+
+                <div class="col-md-4 mb-3">
+                    <div class="">
+                        <div class="card">
+                            <div class="card-header">
+                                Les sous-espèces des tigres
+                            </div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de Sibérie
+                                    <span class="badge badge-secondary badge-pill">120</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de Chine méridionale
+                                    <span class="badge badge-secondary badge-pill">540</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de Bali
+                                    <span class="badge badge-secondary badge-pill">230</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de d'Indochine
+                                    <span class="badge badge-secondary badge-pill">240</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de Malaisie
+                                    <span class="badge badge-secondary badge-pill">1200</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de Java
+                                    <span class="badge badge-secondary badge-pill">710</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de Sumatra
+                                    <span class="badge badge-secondary badge-pill">20</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre du Bengale
+                                    <span class="badge badge-secondary badge-pill">40</span>
+                                </a>
+                                <a href="#" class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tigre de la Caspienne
+                                    <span class="badge badge-secondary badge-pill">200</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-8">
                     <img class="img-fluid rounded" src="../img/photo-tigre.jpg" alt="Tigre" />
                 </div>
             </div>
         </section>
+
         <section class="row">
             <div class="col">
-                <h2 class="display-4 text-center text-danger p-md-3">
+                <h2 class="display-4 text-center text-danger pb-md-2">
                     Menaces pour les tigres
                 </h2>
                 <table class="table table-dark table-bordered table-sm">
