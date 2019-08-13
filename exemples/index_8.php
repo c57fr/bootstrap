@@ -19,6 +19,13 @@
 </head>
 
 <body>
+
+    <ol class="breadcrumb mt-3 mb-0">
+        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="#">Témoignages</a></li>
+        <li class="breadcrumb-item active">Chasseurs</li>
+    </ol>
+
     <div class="container">
         <header class="row">
             <div class="col-md-12 col-lg-8">
