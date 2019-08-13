@@ -14,11 +14,14 @@ $dossExemples = 'exemples/'; // Dossier des exemples
 $files        = new DirectoryIterator(dirname(__DIR__).'/'.$dossExemples);
 // var_dump($files, pathinfo(__FILE__));
 foreach ($files as $fileInfo) {
-    if ($fileInfo->isDot()|| $fileInfo->isDir()) {
+    if ($fileInfo->isDot() || $fileInfo->isDir()) {
         continue;
     } ?>
-        <li class="list-group-item p-2"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?> target="_blank">
-                <?php echo $fileInfo->getBasename('.html'); ?></a></li>
+        <li class="list-group-item p-1"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?> target="_blank">
+                <?php echo $fileInfo->getBasename('.html');
+    // ($fileInfo->key() - 3).' '.
+                ?></a>
+        </li>
         <?php
 }
 
