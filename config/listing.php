@@ -16,11 +16,16 @@ $files        = new DirectoryIterator(dirname(__DIR__).'/'.$dossExemples);
 foreach ($files as $fileInfo) {
     if ($fileInfo->isDot() || $fileInfo->isDir()) {
         continue;
-    } ?>
+    }
+    $ext = '.'.$fileInfo->getExtension();
+    // echo $ext;?>
         <li class="list-group-item p-1"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?> target="_blank">
-                <?php echo $fileInfo->getBasename('.html');
-    // ($fileInfo->key() - 3).' '.
-                ?></a>
+                <span class="<?php echo ('.php' === $ext) ? 'bgcmaroon' : ''; ?>">
+                    <?php echo $fileInfo->getBasename($ext);
+    // ($fileInfo->key()).' '.
+                ?>
+                </span>
+            </a>
         </li>
         <?php
 }
