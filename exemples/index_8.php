@@ -26,6 +26,13 @@
         <li class="breadcrumb-item active">Chasseurs</li>
     </ol>
 
+    <div class="m-1">
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+        <input type="button" class="btn btn-primary mt-2 ml-3" id="animer" value="Animer">
+    </div>
+
     <div class="container">
         <header class="row">
             <div class="col-md-12 col-lg-8">
@@ -86,10 +93,11 @@
                     <ul class="pagination justify-content-center">
                         <li class="page-item"><a class="page-link" href="#" id="previous">&laquo;</a>
                             <?php
-                for ($i=0; $i < 4; $i++) { 
-                                            $actif =  (0 === $i)?'active':'';
-                    ?>
-                        <li class="page-item <?= $actif?>"><a class="page-link" href="#" id="<?=$i?>"><?=$i+1?></a></li>
+
+                for ($i = 0; $i < 4; ++$i) {
+                    $actif = (0 === $i) ? 'active' : ''; ?>
+                        <li class="page-item <?php echo $actif; ?>"><a class="page-link" href="#"
+                                id="<?php echo $i; ?>"><?php echo $i + 1; ?></a></li>
 
                         <?php
                 }
@@ -146,11 +154,11 @@
             </div>
             <div class="row">
                 <?php
-                for ($i=1; $i < 13; $i++) { 
+                for ($i = 1; $i < 13; ++$i) {
                     ?>
 
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-                    <img class="img-fluid rounded" src="../img/t<?=$i?>.jpg" alt="Tigre" />
+                    <img class="img-fluid rounded" src="../img/t<?php echo $i; ?>.jpg" alt="Tigre" />
                 </div>
                 <?php
                 }
@@ -349,6 +357,22 @@
     })
     </script>
 
+
+    <script>
+    function timer(n) {
+        $(".progress-bar").css("width", n + "%")
+        if (n < 100) {
+            setTimeout(function() {
+                timer(n + 1)
+            }, 20)
+        }
+    }
+    $(function() {
+        $("#animer").click(function() {
+            timer(0)
+        })
+    })
+    </script>
 
 </body>
 
