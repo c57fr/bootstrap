@@ -1,5 +1,6 @@
-<ul>
-    <div class="container-fluid muted mt-3">
+<div class="container-fluid muted mt-3">
+    <ul class="list-group list-group-horizontal-sm">
+
         <?php
 // $a = [
 //     'a' => 1,
@@ -7,21 +8,21 @@
 //     'c' => 3,
 // ];
 
-//echo DIRNAME(DIRNAME(__FILE__)) .'/exemples<br>'.'..'.__DIR__;
-?>
-    </div>
-    <?php
-        $files = new DirectoryIterator(dirname(__DIR__).'/exemples');
-    foreach ($files as $fileInfo) {
-        if ($fileInfo->isDot()) {
-            continue;
-        } ?>
+// echo dirname(__DIR__).'/exemples<br>'.'..'.__DIR__;
 
-    <li><a href=<?php echo $fileInfo->getFilename(); ?> target="_blank">
-            <?php echo $fileInfo->getBasename(); ?></a><br></li>
-    <?php
-    }
+$dossExemples = 'exemples/'; // Dossier des exemples
+$files        = new DirectoryIterator(dirname(__DIR__).'/'.$dossExemples);
+// var_dump($files, pathinfo(__FILE__));
+foreach ($files as $fileInfo) {
+    if ($fileInfo->isDot()|| $fileInfo->isDir()) {
+        continue;
+    } ?>
+        <li class="list-group-item p-2"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?> target="_blank">
+                <?php echo $fileInfo->getBasename('.html'); ?></a></li>
+        <?php
+}
 
-// var_dump($a);
+    // var_dump($a);
 ?>
-</ul>
+    </ul>
+</div>

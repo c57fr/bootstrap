@@ -1,60 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-    <title>Starter Template for Bootstrap</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/tuto.scss" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div class="container">
-      <header class="row">
-        <div class="col">
-          Entete
-        </div>
-      </header>
-      <div class="row">
-        <nav class="col-sm-2">
-          Menu
-        </nav>
-        <section class="col">
-          Section
-          <div class="row">
-            <article class="col-md-10">
-              Article
-            </article>
-            <div class="col">
-              <div class="row">
-                <aside class="col">
-                  Aside 1
-                </aside>
-                <div class="w-100"></div>
-                <aside class="col">
-                  Aside 2
-                </aside>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <footer class="row">
-        <div class="col">
-          Pied de page
-        </div>
-      </footer>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+  <title>Starter Template for Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/tuto5.scss" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="bloclionel">
+      <h2 class="bg-warning text-center text-danger p-sm-3">
+        Bloc Lionel
+      </h2>
     </div>
-     
-    <div><br></div>
- 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+    <div class="jumbotron">
+      <h1 class="display-3">
+        <h1>Flexbox</h1>
+        <p class="lead bg-secondary text-white text-center">Alignement vertical</p>
+        <hr class="my-2">
+        <p class="text-info text-capitalize">More info</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href='https://laravel.sillo.org/bootstrap-4-alignement-et-visibilite'
+            role="button" target="_blank">Tuto Flexbox avec Bootstrap4</a>
+        </p>
+    </div>
+  </div>
+
+  <p></p>
+
+  <table class="table table-bordered table-striped table-sm table-hover m-3 w95">
+    <caption>
+      <h4>Les menaces pour les tigres</h4>
+    </caption>
+    <thead class="thead-light">
+      <tr>
+        <th>Lieu</th>
+        <th>Menace</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-warning">Grand Mekong</td>
+        <td>Demande croissante de certaines parties de l’animal pour la médecine chinoise traditionnelle
+          et fragmentation des habitats du fait du développement non durable d’infrastructures</td>
+      </tr>
+      <tr>
+        <td>Île de Sumatra</td>
+        <td>Production d’huile de palme et de pâtes à papiers</td>
+      </tr>
+      <tr>
+        <td>Indonésie et Malaisie</td>
+        <td class="vam text-center p-3">Pâte à papier, l’huile de palme et le caoutchouc<br><i>(Centrage vertical avec .vam)</i>
+        </td>
+      </tr>
+      <tr class="table-info">
+        <td>États-Unis</td>
+        <td>Les tigres captifs représentent un danger pour les tigres sauvages</td>
+      </tr>
+      <tr>
+        <td>Europe</td>
+        <td>Gros appétit pour l’huile de palme</td>
+      </tr>
+      <tr>
+        <td>Népal</td>
+        <td>Commerce illégal de produits dérivés de tigres</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col">
+        align-items-start
+      </div>
+      <div class="col">
+        align-items-start
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+        align-items-center
+      </div>
+      <div class="col">
+        align-items-center
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col">
+        align-items-end
+      </div>
+      <div class="col">
+        align-items-end
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="col">
+      Pied de page
+      
+        <div class="row">
+          <div class="col align-self-start">
+            align-self-start
+          </div>
+          <div class="col align-self-center">
+            align-self-center
+          </div>
+          <div class="col align-self-end">
+            align-self-end
+          </div>
+        </div>
+      
+    </div>
+  </footer>
+
+  <div><br></div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
