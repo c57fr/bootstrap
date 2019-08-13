@@ -17,43 +17,72 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="css/tuto6.scss" rel="stylesheet" />
+    <link href="css/tuto6.css" rel="stylesheet" />
+    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="fontawesome5.10/css/all.min.css" />
 
     <script src="https://use.fontawesome.com/0b5fa10a1b.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="row">
-        <div class="col-md-12 col-lg-7">
+        <div class="col-md-12 col-lg-8">
           <h1 class="text-center text-uppercase m-4">
             Mon amour pour les tigres<small class="text-muted">
               et tous les félins</small
             >
           </h1>
         </div>
-        <div class="col-md-12 col-lg-5 align-self-center mb-3">
-          <form action="search" method="get" class="form-inline">
-            <div class="input-group">
-              <input
-                type="text"
-                name="search"
-                class="form-control"
-                placeholder="Je cherche..."
-              />
-              <div class="input-group-btn">
-                <button type="submit" class="btn btn-info">
-                  <span class="fa fa-search"></span>
-                  Chercher
-                </button>
+                    
+        <div class="col-md-12 col-lg-4 align-self-center mb-3">
+            <form action="search" method="get" class="form-inline">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="search"
+                  class="form-control"
+                  placeholder="Je cherche..."
+                />
+                <div class="input-group-btn">
+                  <button type="submit" class="btn btn-info">
+                    <span class="fa fa-search"></span>
+                    Chercher
+                  </button>
+                </div>
               </div>
+            </form>
+          </div>
+          
+        <div class="container bg-grey pt-3 mb-3">
+            <div id="content" class="row">
+              <div class="col mb-3"><img class="img-fluid rounded" src="../img/t1.jpg" alt="Tigre"></div>
+              <div class="col mb-3"><img class="img-fluid rounded" src="../img/t2.jpg" alt="Tigre"></div>
+              <div class="col mb-3"><img class="img-fluid rounded" src="../img/t3.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t4.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t5.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t6.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t7.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t8.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t9.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t10.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t11.jpg" alt="Tigre"></div>
+              <div class="col mb-3" style="display: none;"><img class="img-fluid rounded" src="../img/t12.jpg" alt="Tigre"></div>
             </div>
-          </form>
-        </div>
+            <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a class="page-link" href="#" id="previous">&laquo;</a>
+                  <li class="page-item active"><a class="page-link" href="#" id="0">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#" id="1">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#" id="2">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#" id="3">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#" id="next">&raquo;</a></ul>
+                </ul>
+              </nav>
+            </div>
+            
         <div class="col">
           <p>
             Je suis passionné par les <strong>tigres</strong> depuis très
@@ -306,6 +335,10 @@
     <nav class="mb-4">
       <ul class="pagination pagination-sm justify-content-center">
         <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+      
+        
+        <li class="page-item"><a class="page-link" href="#">1</a></li> 
+        
         <li class="page-item"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -329,5 +362,41 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    
+    
+    <script> 
+        var number_of_pages = 4;
+        var show_per_page = 3; 
+        var current_page = 0;
+        function set_display(first, last) {
+          $('#content').children().css('display', 'none')
+          $('#content').children().slice(first, last).css('display', 'inherit')
+        }
+        function previous(){
+          if(current_page > 0) go_to_page(current_page - 1)
+        }
+        function next(){
+          if(current_page < number_of_pages - 1) go_to_page(current_page + 1)
+        }
+        function go_to_page(page_num){
+          current_page = parseInt(page_num)
+          start_from = current_page * show_per_page
+          end_on = start_from + show_per_page
+          set_display(start_from, end_on)
+          $('.active').removeClass('active')
+          $('#' + page_num).parent().addClass('active')
+        }  
+        $(function (){
+          $(document).on('click', 'a', function(e){
+            e.preventDefault()
+            var id = $(this).attr('id')
+            if(id == 'previous') previous()
+            else if(id == 'next') next()
+            else go_to_page(id)
+          })
+        })
+      </script>
+      
+      
   </body>
 </html>

@@ -1,5 +1,4 @@
 .jumbotron {
-  // height: 200px;
   margin: 0;
   padding: 10px auto;
 }
@@ -24,9 +23,6 @@ footer {
   vertical-align: middle !important;
 }
 
-nav{
-  background-color: rgb(97, 1, 1);
-}
 .mylogo{
   border-radius: 4px 0;
 }
@@ -35,6 +31,9 @@ nav{
   position: relative;
   margin-top: 70px;
   color: #f00;
-  // left: 0;
-  // right: 0;
+}
+
+.bg-grey{
+  background-color: rgb(206, 206, 206);
+  border-radius: 7px;
 }
