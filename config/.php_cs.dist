@@ -1,5 +1,6 @@
 <?php
 
+/*
 $header = <<<'EOF'
 Ce fichier est la propriété de C57.fr
 
@@ -14,6 +15,11 @@ un max de monde grâce aux techniques offertes dans c57.fr.
 @Bi1tô, & Bon code !
 
  *: En gros...: Vous en faites ce que vous voulez !!!
+EOF;
+*/
+
+$header = <<<'EOF'
+GC7 - 2019
 EOF;
 
 $finder = PhpCsFixer\Finder::create()
