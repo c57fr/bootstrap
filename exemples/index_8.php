@@ -28,12 +28,25 @@
 
     <div class="m-1">
         <div class="progress">
-            <div class="progress-bar"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated"></div>
         </div>
         <input type="button" class="btn btn-primary mt-2 ml-3" id="animer" value="Animer">
     </div>
 
-    <div class="container alert alert-warning mt-2">
+    <div class="container">
+        <div class="alert alert-warning" style="display: none">
+            <button type="button" class="close" id="fermeralerte">&times;</button>
+            <h4 class="alert-heading">Attention!</h4>
+            <p>Petite information importante !</p>
+        </div>
+        <input type="button" class="btn btn-primary" value="Afficher l'alerte" id="affalerte">
+    </div>
+
+    <div class="container alert alert-warning alert-dismissible fade show mt-2">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Fermer</span>
+        </button>
         <h3 class="alert-heading">Information importante!</h4>
             <p>L'utilisation de la classe <strong>alert</strong> n'est pas sans danger pour les yeux fatigués des
                 pauvres internautes, et je vous demande instamment de l'utiliser avec parcimonie...</p>
@@ -377,6 +390,19 @@
     $(function() {
         $("#animer").click(function() {
             timer(0)
+        })
+    })
+    </script>
+
+    <script>
+    $(function() {
+        $("#affalerte").click(function() {
+            $("#affalerte").hide("slow")
+            $(".alert").show("slow")
+        })
+        $("#fermeralerte").click(function() {
+            $(".alert").hide("slow")
+            $("input.btn").show()
         })
     })
     </script>
