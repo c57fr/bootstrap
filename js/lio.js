@@ -1,24 +1,13 @@
 $(document).ready(function() {
     
-    
-    
-    
-    
-    // Il existe aussi show.bs.collapse, hide.bs, et hiden.bs.collapse
-    $('#bcontenu').on('shown.bs.collapse', function () {
-        $('#apresCoup').toggle(5000);
-      })
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  $("#pourCloseCollapseOne").click();
+  
+  
+  // Il existe aussi show.bs.collapse, hide.bs, et hiden.bs.collapse
+  $("#bcontenu").on("shown.bs.collapse", function() {
+    $("#apresCoup").toggle(3000);
+  });
+
   var aff = $(".btnaff"),
     eff = $(".btneff"),
     lio = $(".lio");
@@ -40,6 +29,14 @@ $(document).ready(function() {
   });
   eff.click();
   aff.click();
+
   
-  $('#pourCloseCollapseOne').click();
+  
+  $("#demo").on("hide.bs.collapse", function(){
+    $(".btndemo").html('<span class="fa fa-angle-down"></span> Ouvrir');
+  });
+  $("#demo").on("show.bs.collapse", function(){
+    $(".btndemo").html('<span class="fa fa-angle-up"></span> Fermer');
+  });
+  
 });

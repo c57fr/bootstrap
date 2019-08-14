@@ -18,7 +18,7 @@ foreach ($files as $fileInfo) {
     }
     $ext = '.'.$fileInfo->getExtension();
     // echo $ext;?>
-    <div class="col shadow p-2 m-2 bg-white rounded"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?>
+    <div class="col shadow px-4 py-2 m-2 bg-white rounded"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?>
             target="_blank" class="text-decoration-none font-weight-bold">
             <span class="<?php echo ('.php' === $ext) ? 'bgcmaroon' : ''; ?>">
                 <?php echo $fileInfo->getBasename($ext);
