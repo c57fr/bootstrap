@@ -90,7 +90,7 @@
       </div>
 
       <div class="row text-center mt-3 mx-3">
-        <div class="col-sm my-auto" id="col1">
+        <div class="col-sm my-auto">
           <a href="#acontenu" data-toggle="collapse" id="achanger"
             >Changer <em>(Par un lien)</em></a
           >
@@ -111,6 +111,30 @@
           </button>
           <div id="bcontenu" class="collapse">
             Contenu
+          </div>
+        </div>
+
+        <div class="col-sm my-auto">
+          <button
+            class="btn btn-secondary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#contenu"
+            aria-expanded="false"
+            aria-controls="contenu"
+          >
+            Bouton
+          </button>
+          <a
+            data-toggle="collapse"
+            href="#contenu"
+            aria-expanded="false"
+            aria-controls="contenu"
+          >
+            Lien
+          </a>
+          <div class="collapse" id="contenu">
+            Contenu<br>(Bouton ou lien)
           </div>
         </div>
       </div>
