@@ -31,10 +31,10 @@
     <div class="container-fluid">
       
         <div class="accordion" id="accordionExample">
-            <div class="card">
+            <div class="card mt-2">
               <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id='pourCloseCollapseOne'>
                     Collapsible Group Item #1
                   </button>
                 </h2>
@@ -76,11 +76,23 @@
             </div>
           </div>
 
-    <a href="#item" data-toggle="collapse">Changer</a>
-    <div id="item" class="collapse">
-      Contenu
+          
+  <div class="row mt-2 text-center">
+    <div class="col">
+      <a href="#acontenu" data-toggle="collapse" id="achanger">Changer <em>(Par un lien)</em></a>
+      <div id="acontenu" class="collapse">
+        Contenu
+      </div>
     </div>
-
+    <div class="col">
+      <button data-toggle="collapse"  data-target="#bcontenu"  id="bchanger">Changer par un bouton</button>
+      <div id="bcontenu" class="collapse">
+        Contenu
+      </div>
+    </div>
+  </div>
+  
+  
     <div class="main pt-2">
       <button class="btn btn-warning btneff">Effacer</button>
       <button class="btn btn-primary btnaff">Afficher</button>

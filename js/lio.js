@@ -4,8 +4,10 @@ $(document).ready(function() {
     
     
     
-    
-    
+    // Il existe aussi show.bs.collapse, hide.bs, et hiden.bs.collapse
+    $('#contenu').on('shown.bs.collapse', function () {
+        // do something…
+      })
     
     
     
@@ -38,4 +40,6 @@ $(document).ready(function() {
   });
   eff.click();
   aff.click();
+  
+  $('#pourCloseCollapseOne').click();
 });

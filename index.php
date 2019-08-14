@@ -19,8 +19,8 @@
 
 <body>
 
-    <div class=" container-fluid">
-        <h1 class="text-center">Test Bootstrap</h1>
+    <div class=" container-fluid text-center">
+        <h1>Test Bootstrap</h1>
 
         <?php include 'config/listing.php'; ?>
     </div>
