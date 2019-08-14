@@ -4,9 +4,18 @@ $(document).ready(function() {
     $(".fa").click(function() {
       $(".collapse").collapse($(this).attr("id"));
     });
+    $('.collapse')
+    .on("shown.bs.collapse", function () {
+      $('.badge').text('"Contenu" affiché')
+    })
+    .on("hidden.bs.collapse", function () {
+      $('.badge').text('"Contenu" caché')
+    });
   });
 
   $("#pourFermerPremierSujet").click();
+  $("#pourCloseCollapseOne").click();
+  
 
   // Il existe aussi show.bs.collapse, hide.bs, et hiden.bs.collapse
   $("#bcontenu").on("shown.bs.collapse", function() {
