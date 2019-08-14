@@ -1,4 +1,22 @@
 $(document).ready(function() {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   var aff = $(".btnaff"),
     eff = $(".btneff"),
     lio = $(".lio");
