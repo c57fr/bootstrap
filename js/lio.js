@@ -1,8 +1,13 @@
 $(document).ready(function() {
-    
+  
+  $(function() {
+    $(".fa").click(function() {
+      $(".collapse").collapse($(this).attr("id"));
+    });
+  });
+
   $("#pourFermerPremierSujet").click();
-  
-  
+
   // Il existe aussi show.bs.collapse, hide.bs, et hiden.bs.collapse
   $("#bcontenu").on("shown.bs.collapse", function() {
     $("#apresCoup").toggle(3000);
@@ -30,13 +35,10 @@ $(document).ready(function() {
   eff.click();
   aff.click();
 
-  
-  
-  $("#demo").on("hide.bs.collapse", function(){
+  $("#demo").on("hide.bs.collapse", function() {
     $(".btndemo").html('<span class="fa fa-angle-down"></span> Ouvrir');
   });
-  $("#demo").on("show.bs.collapse", function(){
+  $("#demo").on("show.bs.collapse", function() {
     $(".btndemo").html('<span class="fa fa-angle-up"></span> Fermer');
   });
-  
 });

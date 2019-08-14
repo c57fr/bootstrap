@@ -29,8 +29,25 @@
 
   <body>
     <div class="container-fluid">
+      <div class="row m-2">
+        <div class="col">
+          <span id="show" class="fa fa-toggle-down fa-3x"></span>
+          <span id="toggle" class="fa fa-refresh fa-3x"></span>
+          <span id="hide" class="fa fa-toggle-up fa-3x"></span>
+        </div>
+        <div class="col my-auto">
+          <p><span id="toggle" class="fa fa-refresh"></span>, le bouton pour tout ouvrir !</p>
+        </div>
+        <div class="collapse">
+          <h3>Je suis le titre de l'accordéon</h3>
+          <p>Je suis le contenu de l'accordéon</p>
+        </div>
+      </div>
+
+      <script></script>
+
       <div id="accordeon">
-        <div class="card mt-2">
+        <div class="card mt-3">
           <div class="card-body">
             <h4 class="card-title">Les plugins de Bootstrap</h4>
           </div>
@@ -133,9 +150,7 @@
           >
             Lien
           </a>
-          <div class="collapse" id="contenu">
-            Contenu<br>(Bouton ou lien)
-          </div>
+          <div class="collapse" id="contenu">Contenu<br />(Bouton ou lien)</div>
         </div>
       </div>
 
