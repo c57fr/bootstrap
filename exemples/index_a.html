@@ -39,19 +39,33 @@
           <h4>Titre du 1<sup>er</sup> accordéon</h4>
           <p>Je suis le contenu de cet accordéon</p>
         </div>
-        <div class="col my-auto text-center">
+        <div class="col my-auto text-right">
           <p>
-            <span class="badge badge-warning"></span><br>
+            <span class="badge badge-warning"></span><br />
             <span id="toggle" class="fa fa-refresh"></span>, le bouton pour tout
             ouvrir !
           </p>
         </div>
       </div>
 
-      <script></script>
+      <button
+        type="button"
+        data-toggle="modal"
+        data-target="#infos"
+        class="btn btn-secondary"
+      >
+        Modale minimaliste
+      </button>
+      <div class="modal" id="infos">
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            Contenu de la fenêtre modale
+          </div>
+        </div>
+      </div>
 
       <div id="accordeon">
-        <div class="card">
+        <div class="card mt-3">
           <div class="card-body">
             <h6 class="card-title mb-0">Les plugins de Bootstrap</h6>
           </div>
