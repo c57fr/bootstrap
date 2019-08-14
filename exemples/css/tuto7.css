@@ -1,3 +1,7 @@
-body{
-  background-color:cornsilk;
+body {
+  background-color: cornsilk;
+}
+
+.fa {
+  cursor: pointer;
 }
