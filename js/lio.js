@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-  $("#pourCloseCollapseOne").click();
+  $("#pourFermerPremierSujet").click();
   
   
   // Il existe aussi show.bs.collapse, hide.bs, et hiden.bs.collapse
