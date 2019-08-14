@@ -1,7 +1,6 @@
-<div class="container-fluid muted mt-3">
-    <ul class="list-group list-group-horizontal-sm">
+<div class="d-flex align-content-around flex-wrap m-auto">
 
-        <?php
+    <?php
 // $a = [
 //     'a' => 1,
 //     'b' => 2,
@@ -19,18 +18,18 @@ foreach ($files as $fileInfo) {
     }
     $ext = '.'.$fileInfo->getExtension();
     // echo $ext;?>
-        <li class="list-group-item p-1"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?> target="_blank">
-                <span class="<?php echo ('.php' === $ext) ? 'bgcmaroon' : ''; ?>">
-                    <?php echo $fileInfo->getBasename($ext);
+    <div class="shadow p-2 m-2 bg-white rounded"><a href=<?php echo $dossExemples.$fileInfo->getFilename(); ?>
+            target="_blank" class="text-decoration-none font-weight-bold">
+            <span class="<?php echo ('.php' === $ext) ? 'bgcmaroon' : ''; ?>">
+                <?php echo $fileInfo->getBasename($ext);
     // ($fileInfo->key()).' '.
                 ?>
-                </span>
-            </a>
-        </li>
-        <?php
+            </span>
+        </a>
+    </div>
+    <?php
 }
 
     // var_dump($a);
 ?>
-    </ul>
 </div>

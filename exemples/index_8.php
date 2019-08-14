@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="icon" href="../../../../favicon.ico" />
-    <title>Starter Template for Bootstrap</title>
+    <link rel="icon" href="../favicon.ico" />
+    <title>8 | Validation</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
