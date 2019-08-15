@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link rel="icon" href="../../../../favicon.ico" />
+    <link rel="icon" href="../favicon.ico" />
     <title>a | jQ</title>
     <!-- Bootstrap CSS -->
     <link
@@ -49,6 +49,64 @@
       </div>
 
       <div class="container-fluid">
+        <div class="row text-center my-2">
+          <div class="col my-auto">
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#infos"
+              class="btn btn-secondary"
+            >
+              Commande
+            </button>
+            <div
+              class="modal"
+              id="infos"
+              role="dialog"
+              aria-labelledby="label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="label">Plus d'informations</h4>
+                  </div>
+                  <div class="modal-body">
+                    Le Tigre (Panthera tigris) est un mammifère carnivore de la
+                    famille des félidés...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col my-auto">
+            <button type="button" class="btn btn-primary" id="button001">
+              Cliquez !
+            </button>
+          </div>
+
+          <div class="col my-auto">
+            <button type="button" class="btn btn-primary" id="buttonimg">
+              Chargez l'image !
+            </button>
+          </div>
+        </div>
+        <div class="row my-2 mx-auto">
+          <div class="col">
+            <div class="has-animation animation-rtl" data-delay="2000">
+              <img id="mon_image" class="w-100 rounded animated" />
+              <!-- 
+                <img
+                src="../img/t5.jpg"
+                id="mon_image"
+                class="float w-100 rounded animated mx-auto"
+                />
+              -->
+            </div>
+          </div>
+        </div>
+
         <div class="row text-center">
           <div class="col">
             <button
@@ -131,10 +189,17 @@
             </div>
           </div>
         </div>
-        <p>Voir <a href="https://laravel.sillo.org/bootstrap-4-fenetre-modale-modal/" target="link" class="link text-decoration-none">
-          autres fenêtres modales
-        <i class="fa fa-external-link" aria-hidden="true"></i>
-        </a><small class="muted"> (Avec form ajax, etx...)</small></p>
+        <p>
+          Voir
+          <a
+            href="https://laravel.sillo.org/bootstrap-4-fenetre-modale-modal/"
+            target="link"
+            class="link text-decoration-none"
+          >
+            autres fenêtres modales
+            <i class="fa fa-external-link" aria-hidden="true"></i> </a
+          ><small class="muted"> (Avec form ajax, etx...)</small>
+        </p>
       </div>
 
       <div id="accordeon">
@@ -199,9 +264,11 @@
 
       <div class="row text-center mt-3 mx-3">
         <div class="col-sm my-auto">
-          <a href="#acontenu" data-toggle="collapse" id="achanger"
-            >Changer <em>(Par un lien)</em></a
-          >
+          <p>
+            <a href="#acontenu" data-toggle="collapse" id="achanger"
+              >Changer <em>(Par un lien)</em></a
+            >
+          </p>
           <div id="acontenu" class="collapse">Contenu 1</div>
         </div>
 
@@ -212,13 +279,18 @@
         </div>
 
         <div class="col my-auto">
-          <button data-toggle="collapse" data-target="#bcontenu" id="bchanger">
+          <button
+            class="btn btn-warning font-weight-bold"
+            data-toggle="collapse"
+            data-target="#bcontenu"
+            id="bchanger"
+          >
             Changer par un bouton
           </button>
           <div id="bcontenu" class="collapse">Contenu 2</div>
         </div>
 
-        <div class="col-sm my-auto">
+        <div class="col-sm my-auto pt-2">
           <button
             class="btn btn-secondary"
             type="button"
@@ -437,6 +509,39 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        $("#button001").on("click", function() {
+          var button = $(this);
+          button.addClass("toggle");
+          if (!button.hasClass("disabled")) {
+            button
+              .addClass("disabled")
+              .html('Chargement <span class="fa fa-spinner fa-pulse"></span>');
+            setTimeout(function() {
+              button.removeClass("disabled").text("Cliquez !");
+            }, 500);
+          }
+        });
+
+        $("#buttonimg").on("click", function() {
+          var button = $(this);
+          if (!button.hasClass("disabled")) {
+            button
+              .addClass("disabled")
+              .html(
+                'Chargement en cours <span class="fa fa-spinner fa-pulse"></span>'
+              );
+            var image = new Image();
+            image.onload = function() {
+              button.removeClass("disabled").text("Chargez l'image !");
+              $("#mon_image").attr({ src: "../img/t5.jpg" });
+            };
+            image.src = "../img/t5.jpg";
+          }
+        });
+      });
+    </script>
     <script src="../js/lio.js"></script>
   </body>
 </html>

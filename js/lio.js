@@ -50,4 +50,13 @@ $(document).ready(function() {
   $("#demo").on("show.bs.collapse", function() {
     $(".btndemo").html('<span class="fa fa-angle-up"></span> Fermer');
   });
+  
+  
+  $('.has-animation').each(function(index) {
+    $(this).delay($(this).data('delay')).queue(function(){
+      $(this).addClass('animate-in');
+    });
+  });
+  
+  
 });
