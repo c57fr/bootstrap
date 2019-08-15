@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61289532-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-61289532-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Accueil | c57</title>
+    <meta name="description" content="Page Accueil de c57.fr">
+    <meta name="title" content="">
+    <meta name="author" content="GC7">
+    <meta name="generator" content="c57fr">
+
+    <link rel="shortcut icon" type="image/png" href="https://c57.fr/themes/c57/assets/images/favicon.ico">
+    <link rel="icon" type="image/gif" href="https://c57.fr/themes/c57/assets/images/animated_favicon.gif">
+
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://c57.fr/combine/86c520b12dbd1a8767bdcc70f760b2d6-1559998259" rel="stylesheet">
+        <link rel="stylesheet" href="https://c57.fr/plugins/grcote7/c57/assets/css/derInscrits.css">
+
+</head>
+
+<body>
+
+    <header>
+  <a href="doc" title="Accéder aux pages de documentation">Doc</a>
+  | <a href=""  data-toggle="modal" data-target="#modalLoginForm" title=" Zone membres " id="btnBea">B.E.A.</a>
+  </header>
+    <!-- Content -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+
+        
+        <h4 class="modal-title w-100 font-weight-bold">S'identifier</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fa fa-envelope prefix grey-text"></i>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-email">Email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fa fa-lock prefix grey-text"></i>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Mot de passe</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Login</button>
+              </div>
+    </div>
+  </div>
+</div>
+
+<section id="layout-content" class="container clearfix">
+  <div class="main">
+    <h1 class="spaceTopSite">C57.fr,</h1>
+    <p id="slogan">LA réponse.</p>
+
+    <!--
+      <br/>
+      <div style="position: relative; top: 50%; height: 100%; width:77%; margin: 20px auto; padding-top:10px; text-align: center; border: 3px solid orange; border-radius:7px;">
+        <h3><a href="https://insiders.liveshare.vsengsaas.visualstudio.com/join?0157CCF593681700625A2C75DEA1BCC8ED7F" target="_blank"><i style="vertical-align: middle;" class="fa fa-2x fa-code"></i> Session Co-coding 'En cours'</a></h3>
+      </div>
+    -->
+    <br>
+
+    <h3>Apprenez par l'action ! <a href="https://gitlab.com/c57fr/c57" title=" LE dépôt GitLab de c57.fr
+
+      Rappel: Cliquer sur 'Fork'...
+      
+      ... Et: Clôner VOTRE dépôt !
+      
+      (Prérequis: La Doc c57) ">
+
+        Dépôt GitLab*
+      </a></h3>
+
+    <i>* Installation en 2 lignes de commandes !</i>
+    <br>&nbsp;
+
+    <!-- <div class="resserre">
+      <h4><a href="faq" title="Avant, merci de lire notre page Questions Fréquentes...">Besoin d'aide? Une question? Une attente ou une requête?</a></h4>
+    </div> -->
+    <!-- Slogan suivant à changer ( => + général) à terme... -->
+
+    <p><em id="intro">Le Developpement Informatique (Et pas que !), c'est maintenant et enfin pour tout le
+        monde...<br />
+        ... Et en plus, avec la puissance des logiciels<a href="https://fr.wikipedia.org/wiki/Open_source"
+          target="_blank" class="ext">Open-Sources.</a><br />
+        <span class="accron">C</span>'est en <span class="accron">5</span> - <span class="accron">7</span>..<span
+          class="accron">.</span>
+        Rapide, facile, même pour les 'pures' <span class="accron">fr</span>ancophones !</em></p>
+
+    <!---->
+    <h2>
+            <a href="https://join.slack.com/t/c57/shared_invite/enQtNDQ1Njc4NDY5MDcyLTZmYWU1YmU3ZTU1MzUyYTIyMzQyMDYyZTkzNTA0ZDZiNTA5MzM1MDJlMDQ5M2FjZDM1ODE1NzJiNzcxZDE0NDg"
+        class="btn" id="chatroom" target="_blank">ChatRoom</a>
+    </h2>
+
+    <hr>
+
+    
+<div id="derInscrits">
+  BRAVOS aux derniers inscrits:
+  <ul class="comaSeparate">
+          <li class="userInList"><span>Momo</span></li>
+          <li class="userInList"><span>Michel</span></li>
+          <li class="userInList"><span>Rania</span></li>
+          <li class="userInList"><span>Milane</span></li>
+          <li class="userInList"><span>Scart</span></li>
+          <li class="userInList"><span>Maurice</span></li>
+          <li class="userInList"><span>Lio</span></li>
+      </ul>
+</div> 
+
+    <hr>
+
+    
+  </div>
+</section>
+    <footer>
+  <div style="
+  /* margin-top: 0; 
+  padding-top: 0;*/
+  line-height: 0.1;text-align: right; margin-top: -.125%; font-size: 0.7em;margin-right: 15px;" class="sp1">
+    &copy; 2019 - <strong><a href="https://github.com/c57fr/c57"
+                            title="Dépôt GitHub">C57</a></strong>, Club Privé de Partage de Connaissances &
+    Compétences
+    -
+    <em><a href="http://sg1.COTE7.com" class="ext" target="_blank">GC7</a></em> @ F59410 - ANZIN
+  </div>
+</footer>
+    <!-- Scripts -->
+    <script src="https://c57.fr/combine/3ec80e9192c69de18c017740e09b75ce-1559995812">
+    </script>
+
+    <script src="/modules/system/assets/js/framework.js"></script>
+<script src="/modules/system/assets/js/framework.extras.js"></script>
+<link rel="stylesheet" property="stylesheet" href="/modules/system/assets/css/framework.extras.css">
+    <script src="https://c57.fr/themes/c57/assets/js/homepage.js"></script>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+            console.log('Ok');
+        });
+
+    </script>
+
+</body>
+
+</html>
