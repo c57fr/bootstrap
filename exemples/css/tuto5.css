@@ -1,10 +1,25 @@
 body {
-  min-width: 300px;
+  padding-top: 10px;
 }
 
+[class*="col"],
+footer,
+aside {
+  background-color: lightblue;
+  border: 1px solid blue;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.row {
+  margin-bottom: 10px;
+  height: 150px;
+  background-color: #b4c8cf;
+  border-radius: 7px;
+}
 
 .jumbotron {
-  /* height: 200px; */
   margin: 0;
   padding: 10px auto;
 }
@@ -29,28 +44,17 @@ footer {
   vertical-align: middle !important;
 }
 
-nav {
-  background-color: rgba(97, 1, 1, .85);
+#alignblocs.container {
+  height: 500px;
+  border: 1px solid blue;
+  background-color: #e2dddd;
+  border-radius: 7px;
 }
 
-.mylogo {
-  border-radius: 4px 0;
+#alignblocs .bloc1 {
+  height: 200px;
+  border: 1px solid #010150;
+  background-color: #e2dddd;
+  border-radius: 7px;
 }
-
-/*/
-#contentgc7 {
-  position: relative;
-  margin-top: 40px;
-  color: rgb(65, 5, 5);
-}
-*/
-
-
-/* Bonne valeur: 575 
-@media (min-width:0) {
-  #contentgc7 {
-  }
-}
-*/
-/* top: 40px; */
-/* background-color: rgb(148, 148, 255); */
+/*# sourceMappingURL=tuto5.css.map */
