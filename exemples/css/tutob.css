@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Comic;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/css/fonts/comic-sans-ms.woff) format("woff"), url(/css/fonts/comic-sans-ms.ttf) format("truetype");
+}
+
+body {
+  font-size: 18px;
+  background-color: cornsilk;
+  font-family: "Comic", serif;
+}
+/*# sourceMappingURL=tutob.css.map */
