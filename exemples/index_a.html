@@ -49,8 +49,6 @@
       </div>
 
       <div class="container-fluid">
-        
-        
         <div class="row text-center">
           <div class="col">
             <button
@@ -110,7 +108,7 @@
             <button
               type="button"
               data-toggle="modal"
-              data-backdrop="false" 
+              data-backdrop="false"
               data-target="#infos2"
               class="btn btn-primary"
             >
@@ -119,7 +117,15 @@
             <div class="modal" id="infos2">
               <div class="modal-dialog">
                 <div class="modal-content text-center">
-                  Contenu de la fenêtre modale 2
+                  <div class="modal-header text-right">
+                    <h4>Sans fond blanc, donc oblige fermeture</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <span>&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Contenu de la fenêtre modale 2
+                  </div>
                 </div>
               </div>
             </div>
